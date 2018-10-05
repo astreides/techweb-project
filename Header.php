@@ -9,5 +9,7 @@
 </log>
 <header>
 	<center>Site de vente.com</center>
-	<lien name="Cart" href="Cart.php"
+	<lien style="text-align:right">
+	<a href='Cart'> Panier</a><br/>
+	</lien>
 </header>

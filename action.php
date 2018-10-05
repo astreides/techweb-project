@@ -7,7 +7,7 @@
     <title>result</title>
 </head>
 <body>
-	login: <?php echo htmlspecialchars($_POST["nom"]); ?></br>
-	password: <?php echo (int)$_POST["age"]; ?>
+	login: <?php echo htmlspecialchars($_POST["new login"]); ?></br>
+	password: <?php echo htmlspecialchars($_POST["new password"]); ?>
 </body>
 </html>

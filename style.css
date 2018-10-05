@@ -36,14 +36,14 @@ insc{
 header{
     color:orange;
     font-size :xx-large;
-    background-color: green;
+    background-color: #FD9105;
     padding-top:30px;
     left:0%;
     right:0%;
 }
 log{ 
     color: white;
-    background-color:green;
+    background-color:#FD9105;
     position: absolute;
     top:0;
     left:0%;

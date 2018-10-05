@@ -6,9 +6,9 @@
     <title>create account page</title>
 </head>
 <body>
-<form name="affiche" method="post" action="action.php">
-	new login : <input type="text" name="new login" />
-        new password : <input type="text" name="new password" />
+<form method="post" action="action.php">
+	new login : <input type="text" name="nom" />
+        new password : <input type="text" name="age" />
      	<input type="submit" value="OK">
 </form>
 </body>

@@ -7,8 +7,8 @@
     <title>result</title>
 </head>
 <body>
-login: <?php echo htmlspecialchars($_POST['new login']); ?>
-password: <?php echo (int)$_POST['new password']; ?>
+login: <?php echo htmlspecialchars($_POST["nom"]); ?>
+password: <?php echo (int)$_POST["age"]; ?>
 </form>
 </body>
 </html>

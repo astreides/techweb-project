@@ -6,6 +6,7 @@
 </head>
 <body>
     <?php include("Header.php") ?>
+	<article>
 	    <table>
         <thead><tr>
             <th>Categorie</th>
@@ -29,5 +30,6 @@
                 <td></td>
                 </tr></tbody>
     </table>
+	</article>
 </body>
 </html>

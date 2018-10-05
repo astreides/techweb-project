@@ -9,10 +9,10 @@
 </log>
 <header>
 	<center>Site de vente.com</center>
-<a href='Accueil'> Menu</a>
-	<a href='Cart'> Panier</a>
-	<a href='account.php'> Nouveau compte</a>
-	<a href='listproducts.php'> Produits</a>
+	<a href='Accueil'><input type = "button" value="Menu"></a>
+	<a href='Cart'> <input type = "button" value="Cart"></a>
+	<a href='account.php'><input type = "button" value="Nouveau compte"></a>
+	<a href='listproducts.php'> <input type = "button" value="Produits"></a>
 	<lien style="text-align:right">
 	</lien>
 </header>

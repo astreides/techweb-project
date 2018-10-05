@@ -1,9 +1,7 @@
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-<head>
 function techno(){
-	<a href="www.techno-web.fr"/a>
+	<a href="page.html"/a>
 }
-</head>
 <header>
 	<center>Site de vente.com</center>
 	<log>

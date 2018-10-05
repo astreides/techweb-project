@@ -11,7 +11,7 @@
 	<center>Site de vente.com</center>
 	<lien style="text-align:right">
 	<a href='Cart'> Panier</a>
-	<b href='account.php'> Créer compte</b>
+	<b href='account'> Créer compte</b>
 	<c href='listproducts.php'> Produits</c>
 
 	</lien>

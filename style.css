@@ -1,0 +1,64 @@
+/* mise en page globale */
+
+body {
+margin: 0;
+padding: 0;
+background: #FFFFFF;
+color: black;
+font-size: 80%;
+font-family: "Bitstream Vera Sans", Verdana, Arial, Helvetica, serif;
+}
+a{
+    color: blue;
+}
+
+b{
+    color: purple;
+}
+c{
+    position: absolute;
+    top:300px;
+}
+t{
+    color:black;
+    font-size:xx-large;
+}
+prix{
+    font-size:xx-large;
+    color:blue;
+}
+insc{
+    font-size:small;
+    background-color:red;
+    color:red;
+}
+
+header{
+    color:blue;
+    font-size :xx-large;
+    background-color: #FFFC39;
+    top:0;
+    right: 0%;
+    left:0%;
+
+
+}
+
+footer{
+    color: #000000;
+    background-color: #FF0000;
+    position: absolute;
+    bottom:0;
+    right:0%;
+    left:0%;
+    size:"200px";
+}
+v{
+    background-color: #8B8B8B;
+}
+table{
+    background-color: #8BFFFF;
+    position: absolute;
+    top:80px;
+
+}

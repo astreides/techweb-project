@@ -3,7 +3,9 @@
 body {
 margin: 0;
 padding: 0;
-background: #FFFFFF;
+background-image: url("images/chewie.jpg");
+height: 100%;
+width: 100%;
 color: black;
 font-size: 80%;
 font-family: "Bitstream Vera Sans", Verdana, Arial, Helvetica, serif;

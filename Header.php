@@ -9,11 +9,10 @@
 </log>
 <header>
 	<center>Site de vente.com</center>
-	<lien style="text-align:right">
-	<a href='Accueil'> Menu</a>
+<a href='Accueil'> Menu</a>
 	<a href='Cart'> Panier</a>
 	<a href='account.php'> Nouveau compte</a>
 	<a href='listproducts.php'> Produits</a>
-
+	<lien style="text-align:right">
 	</lien>
 </header>

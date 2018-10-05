@@ -9,6 +9,6 @@
 <body>
 	login: <?php echo htmlspecialchars($_POST["nlogin"]); ?></br>
 	password: <?php echo htmlspecialchars($_POST["npassword"]); ?></br>
-	<a href='Acceuil'> Retour Menu</a>
+	<a href='Accueil'> Retour Menu</a>
 </body>
 </html>

@@ -42,7 +42,7 @@ header{
     right:0%;
 }
 log{ 
-    color: white;
+    color: orange;
     background-color:blue;
     position: absolute;
     top:0;

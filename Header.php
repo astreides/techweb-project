@@ -1,7 +1,5 @@
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-function techno(){
-	<a href="page.html"/a>
-}
+
 <header>
 	<center>Site de vente.com</center>
 	<log style="text-align:right">

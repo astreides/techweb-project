@@ -36,12 +36,19 @@ insc{
 header{
     color:blue;
     font-size :xx-large;
-    background-color: #FFFC39;
-    top:0;
-    right: 0%;
+    background-color: yellow;
+    padding-top:10px;
     left:0%;
-
-
+    right:0%;
+}
+log{ 
+    color: #0A0A0A;
+    background-color:yellow;
+    position: absolute;
+    top:0;
+    left:0%;
+    right:0%;
+    size:"200px";
 }
 
 footer{

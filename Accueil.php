@@ -3,10 +3,7 @@
 <html>
     <head>
         <title>Site de vente.com</title>
-        <header>
-            <?php include("Header.php") ?>
-            
-        </header>
+
         <style>
         
         </style>
@@ -28,6 +25,7 @@
             </table>
     </nav>
     <body>
+	<?php include("Header.php") ?>
 <section>
     <center><img src='images/pubTshirt.jpeg'alt='T-shirts' width"500px"/></center>
 </section>

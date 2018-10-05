@@ -34,7 +34,7 @@ insc{
 }
 
 header{
-    color:white;
+    color:orange;
     font-size :xx-large;
     background-color: blue;
     padding-top:30px;
@@ -42,7 +42,7 @@ header{
     right:0%;
 }
 log{ 
-    color: orange;
+    color: white;
     background-color:blue;
     position: absolute;
     top:0;

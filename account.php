@@ -8,7 +8,7 @@
 <body>
 <form method="post" action="action.php">
 	new login : <input type="text" name="nlogin" />
-        new password : <input type="text" name="npassword" type="passeword"/>
+        new password : <input type="password" name="npassword" />
      	<input type="submit" value="OK">
 </form>
 </body>

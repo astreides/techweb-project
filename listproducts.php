@@ -7,7 +7,6 @@
 <body>
     <?php include("Header.php") ?>
 	    <table>
-        <caption>Products</caption>
         <thead><tr>
             <th>Categorie</th>
             <th>Picture</th>

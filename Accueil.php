@@ -4,7 +4,7 @@
     <head>
         <title>Site de vente.com</title>
         <header>
-            <center>Site de vente.com</center>
+            <?php include("Header.php") ?>
             
         </header>
         <style>

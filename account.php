@@ -1,5 +1,5 @@
 <!DOCTYPE>
-
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 <html>
 <head>
     <meta charset="iso-8859-1" />
@@ -7,15 +7,18 @@
 </head>
 <body>
 <form method="post" action="action.php"></br>
-	new login : <input type="text" name="nlogin" /></br>
-        new password : <input type="password" name="npassword" /></br>
-	nom de ta maman : <input type="text" name="mama" /></br>
-        nom de ton papa : <input type="text" name="papa" /></br>
-	ton petit nom : <input type="text" name="name" /></br>
-        ta pitite adress : <input type="text" name="adress" /></br>
-	ton pitit 06 : <input type="text" name="tel" /></br>
-	ton age : <input type="text" name="age" /></br>
-     	<input type="submit" value="OK"></br>
+<table>
+    <th>Pseudo : <input type="text" name="nlogin" /></br></th><tr>
+    <th>mot de passe : <input type="password" name="npassword" /></br></th><tr>
+    <th>confirmation : <input type="password" name="validation" /></br></th><tr>
+    <th>nom : <input type="password" name="nom" /></br></th><tr>
+    <th>prénom : <input type="password" name="prenom" /></br></th><tr>
+    <th>adresse : <input type="text" name="adresse" /></br></th><tr>
+    <th>numéro de tépéphone : <input type="text" name="tel" /></br></th><tr>
+	<th>date de naissance : <input type="text" name="age" /></br></th><tr>
+    <th><input type="submit" value="OK"></br></th><tr>
+</table>
+
 </form>
 </body>
 </html>

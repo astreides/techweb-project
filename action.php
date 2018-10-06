@@ -10,7 +10,7 @@
 	login: <?php echo htmlspecialchars($_POST["nlogin"]); ?></br>
 	password: <?php echo htmlspecialchars($_POST["npassword"]); ?></br>
 	nom: <?php echo htmlspecialchars($_POST["nom"]); ?></br>
-	prénom: <?php echo htmlspecialchars($_POST["prenom"]); ?></br>
+	prenom: <?php echo htmlspecialchars($_POST["prenom"]); ?></br>
 	ta pitite adresse: <?php echo htmlspecialchars($_POST["adresse"]); ?></br>
 	ton pitit 06: <?php echo (int)$_POST["tel"]; ?></br>
 	date de naissance: <?php echo (int)$_POST["age"]; ?></br>

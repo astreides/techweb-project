@@ -12,7 +12,7 @@
     <body>
 	<?php include("Header.php") ?>
 <section>
-    <center><img src='images/bbtgr.PNG'alt='T-shirts' width"500px"/></center>
+    <center><img src='images/bbtgr.PNG'alt='T-shirts' width"300px"/></center>
 </section>
 
 

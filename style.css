@@ -67,16 +67,11 @@ footer{
 v{
     background-color: #8B8B8B;
 }
-/*table{
-    height:100%;
+table {
+    height: 100%;
     width: 100%;
-    background-image:url("images/bb ours.jpg");
-    background-size: 100%;
-
-}*/
-table1{
-    color:aquamarine;
-    position:absolute;
-    bottom:50%;
-    right:70%;
+    color: aquamarine;
+    position: absolute;
+    bottom: 50%;
+    right: 70%;
 }

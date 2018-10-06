@@ -6,7 +6,7 @@
 </head>
 <body>
     <?php include("Header.php") ?>
-	    <table1>
+	    <table>
         <thead><tr>
             <th>Categorie</th>
             <th>Picture</th>
@@ -28,6 +28,6 @@
                 <td>279</td>
                 <td><a href='listproducts.jpg'</td>
                 </tr></tbody>
-    </table1>
+    </table>
 </body>
 </html>

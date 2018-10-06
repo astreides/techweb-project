@@ -21,13 +21,18 @@
             <td>Tigre</td>
             <td><image src='images/bb tigre.jpg' width="50px"></td>
             <td>300</td>
-            <td><a href='listproducts.php'> </td>
+            <td><a href='listproducts.php' value="Product"> </td>
             </tr><tr>
                 <td>Ours</td>
                 <td><image src='bb ours.jpg' width="50px"></td>
                 <td>279</td>
-                <td><a href='listproducts.jpg'</td>
-                </tr></tbody>
+                <td><a href='listproducts.jpg' value="Product"</td>
+                </tr><tr>
+					<td>Loutre</td>
+					<td><image src='loutre.jpg' width="50px"></td>
+					<td>279</td>
+					<td><a href='listproducts.jpg' value="Product"</td>
+					</tr></tbody>
     </table>
 </body>
 </html>

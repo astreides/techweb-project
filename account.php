@@ -14,7 +14,7 @@
     <th>nom : <input type="password" name="nom" /></br></th><tr>
     <th>prénom : <input type="password" name="prenom" /></br></th><tr>
     <th>adresse : <input type="text" name="adresse" /></br></th><tr>
-    <th>numéro de pédéphone : <input type="text" name="tel" /></br></th><tr>
+    <th>numéro de péléphone : <input type="text" name="tel" /></br></th><tr>
 	<th>date de naissance^^ : <input type="text" name="age" /></br></th><tr>
     <th><input type="submit" value="OK"></br></th><tr>
 </table>

@@ -9,12 +9,11 @@
 <body>
 	login: <?php echo htmlspecialchars($_POST["nlogin"]); ?></br>
 	password: <?php echo htmlspecialchars($_POST["npassword"]); ?></br>
-	nom de ta^^ maman: <?php echo htmlspecialchars($_POST["validation"]); ?></br>
-	nom de ton papa: <?php echo htmlspecialchars($_POST["nom"]); ?></br>
-	ton petit nom: <?php echo htmlspecialchars($_POST["prenom"]); ?></br>
-	ta pitite adress: <?php echo htmlspecialchars($_POST["adresse"]); ?></br>
+	nom: <?php echo htmlspecialchars($_POST["nom"]); ?></br>
+	prénom: <?php echo htmlspecialchars($_POST["prenom"]); ?></br>
+	ta pitite adresse: <?php echo htmlspecialchars($_POST["adresse"]); ?></br>
 	ton pitit^^ 06: <?php echo (int)$_POST["tel"]; ?></br>
-	ton age: <?php echo (int)$_POST["age"]; ?></br>
+	date de naissance: <?php echo (int)$_POST["age"]; ?></br>
 	<a href='Accueil'> Retour Menu</a>
 <center><img src='images/bb ours.jpg'alt='T-shirts' width"500px"/></center>
 <center><img src='images/bb tigre.jpg'alt='T-shirts' width"500px"/></center>

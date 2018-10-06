@@ -19,12 +19,12 @@
             </tr></tfoot>
         <tbody><tr>
             <td>Tigre</td>
-            <td><image src='images/bb tigre.jpg'></td>
+            <td><image src='images/bb tigre.jpg' width="50px"></td>
             <td>300</td>
             <td><a href='listproducts.php'> </td>
             </tr><tr>
                 <td>Ours</td>
-                <td><image src='bb ours.jpg'></td>
+                <td><image src='bb ours.jpg' width="50px"></td>
                 <td>279</td>
                 <td><a href='listproducts.jpg'</td>
                 </tr></tbody>

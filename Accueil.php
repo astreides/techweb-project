@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 <html>
     <head>
-        <title>Site de vente.com</title>
+        <title>FurCuddle.com</title>
 
         <style>
         
@@ -12,7 +12,7 @@
     <body>
 	<?php include("Header.php") ?>
 <section>
-    <center><img src='images/bbtgr.PNG'alt='T-shirts' width"100px"/></center>
+    <center><img src='images/bbtgr.PNG'alt='Logo' width="100px"/></center>
 </section>
 
 

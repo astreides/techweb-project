@@ -18,15 +18,15 @@
             <td colspan="3">Footer<br /></td>
             </tr></tfoot>
         <tbody><tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Tigre</td>
+            <td><image src='images/bb tigre.jpg'></td>
+            <td>300</td>
+            <td><a href='listproducts.php'> </td>
             </tr><tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Ours</td>
+                <td><image src='bb ours.jpg'></td>
+                <td>279</td>
+                <td><a href='listproducts.jpg'</td>
                 </tr></tbody>
     </table1>
 </body>

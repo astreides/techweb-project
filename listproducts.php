@@ -6,6 +6,7 @@
 </head>
 <body>
     <?php include("Header.php") ?>
+<form method="post" action="product.php">
 	    <table border=6 cellspacing=12 cellpadding=20>
         <thead><tr>
             <th>Categorie</th>
@@ -21,18 +22,19 @@
             <td>Tigre</td>
             <td><image src='images/bb tigre.jpg' width="50px"></td>
             <td>300</td>
-            <td><a href='listproducts.php' value="Product"> </td>
+            <td><input type="submit" name="produits" value="tigre"></td>
             </tr><tr>
                 <td>Ours</td>
                 <td><image src='images/bb ours.jpg' width="50px"></td>
                 <td>279</td>
-                <td><a href='listproducts.jpg' value="Product"</td>
+                <td><input type="submit" name="produits" value="ours"></td>
                 </tr><tr>
 					<td>Loutre</td>
 					<td><image src='images/loutre.jpg' width="50px"></td>
 					<td>279</td>
-					<td><a href='listproducts.jpg' value="Product"</td>
+					<td><input type="submit" name="produits" value="loutre"></td>
 					</tr></tbody>
     </table>
+</form>
 </body>
 </html>

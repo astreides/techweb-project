@@ -24,12 +24,12 @@
             <td><a href='listproducts.php' value="Product"> </td>
             </tr><tr>
                 <td>Ours</td>
-                <td><image src='bb ours.jpg' width="50px"></td>
+                <td><image src='images/bb ours.jpg' width="50px"></td>
                 <td>279</td>
                 <td><a href='listproducts.jpg' value="Product"</td>
                 </tr><tr>
 					<td>Loutre</td>
-					<td><image src='loutre.jpg' width="50px"></td>
+					<td><image src='images/loutre.jpg' width="50px"></td>
 					<td>279</td>
 					<td><a href='listproducts.jpg' value="Product"</td>
 					</tr></tbody>

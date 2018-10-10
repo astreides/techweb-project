@@ -7,7 +7,7 @@
 </head>
 <body>
 <form method="post" action="action.php"></br>
-<table>
+<table border=6 cellspacing=12 cellpadding=20>
     <th>Pseudo : <input type="text" name="nlogin" /></br></th><tr>
     <th>mot de passe : <input type="password" name="npassword" /></br></th><tr>
     <th>confirmation : <input type="password" name="validation" /></br></th><tr>

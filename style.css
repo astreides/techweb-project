@@ -3,7 +3,7 @@
 body {
 margin: 0;
 padding: 0;
-background-image: url("images/chewie.jpg");
+/*background-image: url("images/chewie.jpg");*/
 height: 100%;
 width: 100%;
 color: black;
@@ -40,7 +40,7 @@ insc{
 header{
     color:white;
     font-size :xx-large;
-    background-color: #FD9105;
+    background-color: blue;
     padding-top:30px;
     left:0%;
     right:0%;
@@ -74,4 +74,5 @@ table {
     position: absolute;
     bottom: 50%;
     right: 70%;
+    margin-bottom: 200px;
 }

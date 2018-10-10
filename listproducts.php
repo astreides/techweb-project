@@ -6,7 +6,7 @@
 </head>
 <body>
     <?php include("Header.php") ?>
-	    <table>
+	    <table border=6 cellspacing=12 cellpadding=20>
         <thead><tr>
             <th>Categorie</th>
             <th>Picture</th>

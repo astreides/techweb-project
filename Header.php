@@ -19,7 +19,7 @@ catch(Exception $e)
 </log>
 <header>
 	<center>FurCuddle.com</center>
-	<a href='Accueil'><input type = "button" value="Menu"></a>
+	<a href='Accueil.php'><input type = "button" value="Menu"></a>
 	<a href='Cart'> <input type = "button" value="Cart"></a>
 	<a href='account.php'><input type = "button" value="Nouveau compte"></a>
 	<a href='listproducts.php'> <input type = "button" value="Produits"></a>

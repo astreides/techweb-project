@@ -8,7 +8,6 @@
     <?php
     include("Header.php");
     $reponse=$bdd->query('SELECT * FROM products');
-    
     ?>
 <form method="post" action="product.php">
 	    <table border=6 cellspacing=12 cellpadding=20>
@@ -25,7 +24,7 @@
         		?>
         		<tr>
             	<td> <?php echo $donnees['name'] ?></td>
-            	<td><image src=<?php echo $donnees['lien_image'] ?> width="50px"></td>
+            	<td><image src=<?php echo $donnees['lien_image'] ?> width="200px"></td>
             	<td><?php echo $donnees['cutiness'] ?></td>
             	<td><input type="submit" name="produits" value=<?php echo $donnees['name'] ?>></td>
             	</tr>

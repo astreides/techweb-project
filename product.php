@@ -7,14 +7,13 @@
 <body>
     <?php include("Header.php") ?></br>
 	<?php
-	$reponse=$bdd->query('SELECT * FROM products');
+	$reponse=$bdd->query('SELECT * FROM products WHERE name=\''.$_POST["produits"].'\'');
 	while ($donnees=$reponse->fetch()){
-		if($_POST["produits"]==$donnees['name']){
-			?>
-			<image src=<?php echo $donnees['lien_image'] ?> width="600px"></br>
-			<?php
-			echo $donnees['description']." ".$donnees['unit_price']." euros";
-		}
+		?>
+		<image src=<?php echo $donnees['lien_image'] ?> width="600px"></br>
+		<?php
+		echo $donnees['description']." ".$donnees['unit_price']." euros";
+		
 	}
 	?>
 <form method="post" action="Cart.php">

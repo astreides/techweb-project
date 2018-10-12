@@ -7,9 +7,6 @@
 <body>
     <?php include("Header.php") ?></br>
 	<?php
-	/*$reponse=$bdd->query('SELECT p.* FROM order_products p 
-	INNER JOIN order o  ON p.id=o.id
-	WHERE p.id=4') or die(print_r($bdd->errorInfo()));*/
 
 	$reponse=$bdd->query('select p.* from products p
 INNER JOIN order_products op ON p.id = op.product_id

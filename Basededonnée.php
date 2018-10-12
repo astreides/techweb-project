@@ -12,7 +12,7 @@ $reponse=$bdd->query('SELECT * FROM orders');
 
 while($donnees=$reponse->fetch())
 {
-	<?php echo $donnees['type']; ?>
+	php echo $donnees['type'];
 	
 }
 ?>

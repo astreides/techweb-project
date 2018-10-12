@@ -105,7 +105,7 @@ INSERT INTO `ranges` (`name`,`parent_id`) VALUES ('Third range', 1);
 
 INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutinesse`) VALUES ('Tigre','description',2,57.08,300);
 INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutinesse`) VALUES ('Ours','description2',3,46.22,278);
-INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutinesse`) VALUES ('Loutre','description3',3,48.12,288);
+INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutinesse`) VALUES ('Loutre','description3',4,48.12,288);
 
 INSERT INTO `user_addresses` (`human_name`, `address_one`, `address_two`, `postal_code`, `city`, `country`)
   VALUES ('Fred Eric', '2 impasse Duvet','3ieme étage', '59000', 'Lille', 'FRANCE');

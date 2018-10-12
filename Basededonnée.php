@@ -1,7 +1,7 @@
 <?php
 try
 {
-	$bdd=newPDO('mysql:host=localhost;dbname=D:\Documents\GitHub\techweb-project\dump;charset=utf8','root','');
+	$bdd=newPDO('mysql:host=localhost;dbname=dump;charset=utf8','root','');
 
 }
 catch(Exception $e)

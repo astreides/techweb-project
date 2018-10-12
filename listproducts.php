@@ -8,7 +8,6 @@
     <?php
     include("Header.php");
     $reponse=$bdd->query('SELECT * FROM products');
-    
     ?>
 <form method="post" action="product.php">
 	    <table border=6 cellspacing=12 cellpadding=20>

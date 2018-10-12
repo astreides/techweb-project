@@ -5,6 +5,7 @@
     <title>Cart</title>
 </head>
 <body>
+	<p1> Cart </p1>
     <?php include("Header.php") ?></br>
 	<?php
 

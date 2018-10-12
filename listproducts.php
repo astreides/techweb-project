@@ -24,7 +24,7 @@
         		?>
         		<tr>
             	<td> <?php echo $donnees['name'] ?></td>
-            	<td><image src=<?php echo $donnees['lien_image'] ?> width="50px"></td>
+            	<td><image src=<?php echo $donnees['lien_image'] ?> width="200px"></td>
             	<td><?php echo $donnees['cutiness'] ?></td>
             	<td><input type="submit" name="produits" value=<?php echo $donnees['name'] ?>></td>
             	</tr>

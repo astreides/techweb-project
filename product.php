@@ -6,9 +6,20 @@
 </head>
 <body>
     <?php include("Header.php") ?></br>
-	le bébé <?php echo htmlspecialchars($_POST["produits"]); ?> est un bébé tout tout mignon, voulez vous le commandez?</br>
+	<?php
+	$reponse=$bdd->query('SELECT * FROM products');
+	while ($donnees=$reponse->fetch()){
+		if($_POST["produits"]==$donnees['name']){
+			?>
+			<image src=<?php echo $donnees['lien_image'] ?> width="600px"></br>
+			<?php
+			echo $donnees['description']." ".$donnees['unit_price']." euros";
+		}
+	}
+	?>
 <form method="post" action="Cart.php">
-<input type="submit" name="commande" value="ouiii">
+quantiter voulue <input type="text" name="quantity" value="1" /></br>
+<input type="submit" name="commande" value="click me">
 </form>
 </body>
 </html>

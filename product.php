@@ -10,7 +10,10 @@
 	$reponse=$bdd->query('SELECT * FROM products');
 	while ($donnees=$reponse->fetch()){
 		if($_POST["produits"]==$donnees['name']){
-			echo $donnees['description'];
+			?>
+			<image src=<?php echo $donnees['lien_image'] ?> width="600px"></br>
+			<?php
+			echo $donnees['description']." ".$donnees['unit_price']." euros";
 		}
 	}
 	?>

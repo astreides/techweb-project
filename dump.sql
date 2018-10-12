@@ -120,10 +120,10 @@ INSERT INTO `user_addresses` (`human_name`, `address_one`, `address_two`, `posta
 INSERT INTO `user_addresses` (`human_name`, `address_one`, `address_two`, `postal_code`, `city`, `country`)
   VALUES ('Epicfred', '3 sans idée','oui oui', '59000', 'Lille', 'FRANCE');
 
+INSERT INTO `users` (username, email, password, billing_adress_id, delivery_adress_id,telnummer,birthdate,`name`,`lastname`)
+  VALUES ('Fred Eric', 'fred.eric@example.com','password',1,2,0358181847,Fred, Eric);
 INSERT INTO `users` (username, email, password, billing_adress_id, delivery_adress_id)
-  VALUES ('Fred Eric', 'fred.eric@example.com','password',1,2);
-INSERT INTO `users` (username, email, password, billing_adress_id, delivery_adress_id)
-  VALUES ('Frederic', 'frederic@example.com','password',3,4);
+  VALUES ('Frederic', 'frederic@example.com','password',3,4,0548695874,Frederic, Machin);
 
 INSERT INTO `order_addresses` (`human_name`, `address_one`, `address_two`, `postal_code`, `city`, `country`)
   VALUES ('Fred Eric', '2 impasse Duvet','3ieme étage', '59000', 'Lille', 'FRANCE');

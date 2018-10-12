@@ -122,7 +122,7 @@ INSERT INTO `user_addresses` (`human_name`, `address_one`, `address_two`, `posta
 
 INSERT INTO `users` (username, email, password, billing_adress_id, delivery_adress_id,telnummer,birthdate,`name`,`lastname`)
   VALUES ('Fred Eric', 'fred.eric@example.com','password',1,2,0358181847,'11 octobre 2018','Fred', 'Eric');
-INSERT INTO `users` (username, email, password, billing_adress_id, delivery_adress_id)
+INSERT INTO `users` (username, email, password, billing_adress_id, delivery_adress_id,telnummer,birthdate,`name`,`lastname`)
   VALUES ('Frederic', 'frederic@example.com','password',3,4,0548695874,'10 octobre 2018','Frederic', 'Machin');
 
 INSERT INTO `order_addresses` (`human_name`, `address_one`, `address_two`, `postal_code`, `city`, `country`)

@@ -18,6 +18,7 @@ CREATE TABLE `products` (
   `description` longtext COLLATE utf8_unicode_ci,
   `unit_price` double DEFAULT NULL,
   `cutiness` double DEFAULT NULL,
+  `lien_image` longtext COLLATE utf8_unicode_ci,
   `range_id` int(10) unsigned DEFAULT NULL,
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -107,9 +108,9 @@ INSERT INTO `ranges` (`name`,`parent_id`) VALUES ('Main range', null);
 INSERT INTO `ranges` (`name`,`parent_id`) VALUES ('Second range', 1);
 INSERT INTO `ranges` (`name`,`parent_id`) VALUES ('Third range', 1);
 
-INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutiness`) VALUES ('Tigre','description',2,57.08,300);
-INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutiness`) VALUES ('Ours','description2',3,46.22,278);
-INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutiness`) VALUES ('Loutre','description3',4,48.12,288);
+INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutiness`,`lien_image`) VALUES ('Tigre','description',2,57.08,300,'images/bbtigre.jpg');
+INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutiness`,`lien_image`) VALUES ('Ours','description2',3,46.22,278,'images/bbours.jpg');
+INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutiness`,`lien_image`) VALUES ('Loutre','description3',4,48.12,288,'images/loutre.jpg');
 
 INSERT INTO `user_addresses` (`human_name`, `address_one`, `address_two`, `postal_code`, `city`, `country`)
   VALUES ('Fred Eric', '2 impasse Duvet','3ieme étage', '59000', 'Lille', 'FRANCE');

@@ -109,8 +109,8 @@ INSERT INTO `ranges` (`name`,`parent_id`) VALUES ('Second range', 1);
 INSERT INTO `ranges` (`name`,`parent_id`) VALUES ('Third range', 1);
 
 INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutiness`,`lien_image`) VALUES ('Tigre','Le bébé tigre est un bébé tout tout mignon, voulez vous le commandez?',2,57.08,300,'images/bbtigre.jpg');
-INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutiness`,`lien_image`) VALUES ('Ours','Le bébé tigre est un bébé tout tout mignon, voulez vous le commandez?',3,46.22,278,'images/bbours.jpg');
-INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutiness`,`lien_image`) VALUES ('Loutre','Le bébé tigre est un bébé tout tout mignon, voulez vous le commandez?',4,48.12,288,'images/loutre.jpg');
+INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutiness`,`lien_image`) VALUES ('Ours','Le bébé ours est un bébé tout tout mignon, voulez vous le commandez?',3,46.22,278,'images/bbours.jpg');
+INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutiness`,`lien_image`) VALUES ('Loutre','Le bébé loutre est un bébé tout tout mignon, voulez vous le commandez?',4,48.12,288,'images/loutre.jpg');
 
 INSERT INTO `user_addresses` (`human_name`, `address_one`, `address_two`, `postal_code`, `city`, `country`)
   VALUES ('Fred Eric', '2 impasse Duvet','3ieme étage', '59000', 'Lille', 'FRANCE');

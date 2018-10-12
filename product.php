@@ -6,7 +6,14 @@
 </head>
 <body>
     <?php include("Header.php") ?></br>
-	le bébé <?php echo htmlspecialchars($_POST["produits"]); ?> est un bébé tout tout mignon, voulez vous le commandez?</br>
+	<?php
+	$reponse=$bdd->query('SELECT * FROM products');
+	while ($donnees=$reponse->fetch()){
+		if($_POST["produits"]==$donnees['name']){
+			echo $donnees['description'];
+		}
+	}
+	?>
 <form method="post" action="Cart.php">
 <input type="submit" name="commande" value="ouiii">
 </form>

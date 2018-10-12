@@ -5,14 +5,6 @@
     <meta charset="iso-8859-1" />
     <title>create account page</title>
 </head>
-<body>
-<form method="post" ></br>
-<a href='Accueil.php'><input type = "button" value=" Back to Menu"></a></br>
-	mot de passe : <input type="password" name="nepassword" /></br>
-	confirmation : <input type="password" name="validation" /></br>
- <input type="submit" value="OK" ></br>
-
-</form>
 <?php
 function maFonction(){
     if( !isset($_POST["nepassword"]) ){
@@ -20,23 +12,41 @@ function maFonction(){
     }
    if(strcmp($_POST["nepassword"],$_POST["validation"]) == 0){
 	?><html>
-	<form method="post" action="action.php"></br>
-	<input name="npassword" type="hidden" value="test">
-<table border=6 cellspacing=12 cellpadding=20>
-    <th>Pseudo : <input type="text" name="nlogin" /></br></th><tr>
-    <th>nom : <input type="text" name="nom" /></br></th><tr>
-    <th>prénom : <input type="text" name="prenom" /></br></th><tr>
-    <th>adresse : <input type="text" name="adresse" /></br></th><tr>
-    <th>numéro de péléphone : <input type="text" name="tel" /></br></th><tr>
-	<th>date de naissance : <input type="text" name="age" /></br></th><tr>
-    <th><input type="submit" value="OK"></br></th><tr>
-</table>
+	<form method="post" action="action.php">
+	<input type="hidden" name="nlogin" value=<?php echo $_POST["tnlogin"] ?> >
+	<input type="hidden" name="npassword" value=<?php echo $_POST["nepassword"] ?> >
+	<input type="hidden" name="nom" value=<?php echo $_POST["tnom"] ?> >
+	<input type="hidden" name="prenom" value=<?php echo $_POST["tprenom"] ?> >
+	<input type="hidden" name="adresse" value=<?php echo $_POST["tadresse"] ?> >
+	<input type="hidden" name="tel" value=<?php echo $_POST["ttel"] ?> >
+	<input type="hidden" name="age" value=<?php echo $_POST["tage"] ?> >
+	<input type="submit" value="OK">
 	</form>
 	</html>
 	<?php	
 		}
 	}
- 
+?>
+
+
+
+
+<body>
+<form method="post" >
+<table border=6 cellspacing=12 cellpadding=20>
+    <th>Pseudo : <input type="text" name="tnlogin" /></br></th><tr>
+    <th>mot de passe : <input type="password" name="nepassword" /></br></th><tr>
+    <th>confirmation : <input type="password" name="validation" /></br></th><tr>
+    <th>nom : <input type="text" name="tnom" /></br></th><tr>
+    <th>prénom : <input type="text" name="tprenom" /></br></th><tr>
+    <th>adresse : <input type="text" name="tadresse" /></br></th><tr>
+    <th>numéro de péléphone : <input type="text" name="ttel" /></br></th><tr>
+    <th>date de naissance : <input type="text" name="tage" /></br></th><tr>
+    <th><input type="submit" value="OK"><a href='Accueil.php'><input type = "button" value=" Back to Menu"></a></br></br></th><tr>
+</table>
+
+</form>
+<?php
 try{
     maFonction();
 } catch(Exception $e){

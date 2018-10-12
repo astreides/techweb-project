@@ -59,6 +59,10 @@ CREATE TABLE `users` (
   `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `lastname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `telnummer` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `birthdate` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `billing_adress_id`  int(10) unsigned DEFAULT NULL,
   `delivery_adress_id` int(10) unsigned DEFAULT NULL,
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -103,9 +107,9 @@ INSERT INTO `ranges` (`name`,`parent_id`) VALUES ('Main range', null);
 INSERT INTO `ranges` (`name`,`parent_id`) VALUES ('Second range', 1);
 INSERT INTO `ranges` (`name`,`parent_id`) VALUES ('Third range', 1);
 
-INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutinesse`) VALUES ('Tigre','description',2,57.08,300);
-INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutinesse`) VALUES ('Ours','description2',3,46.22,278);
-INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutinesse`) VALUES ('Loutre','description3',3,48.12,288);
+INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutiness`) VALUES ('Tigre','description',2,57.08,300);
+INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutiness`) VALUES ('Ours','description2',3,46.22,278);
+INSERT INTO `products` (`name`,`description`,`range_id`,`unit_price`,`cutiness`) VALUES ('Loutre','description3',4,48.12,288);
 
 INSERT INTO `user_addresses` (`human_name`, `address_one`, `address_two`, `postal_code`, `city`, `country`)
   VALUES ('Fred Eric', '2 impasse Duvet','3ieme étage', '59000', 'Lille', 'FRANCE');
@@ -116,10 +120,10 @@ INSERT INTO `user_addresses` (`human_name`, `address_one`, `address_two`, `posta
 INSERT INTO `user_addresses` (`human_name`, `address_one`, `address_two`, `postal_code`, `city`, `country`)
   VALUES ('Epicfred', '3 sans idée','oui oui', '59000', 'Lille', 'FRANCE');
 
-INSERT INTO `users` (username, email, password, billing_adress_id, delivery_adress_id)
-  VALUES ('Fred Eric', 'fred.eric@example.com','password',1,2);
-INSERT INTO `users` (username, email, password, billing_adress_id, delivery_adress_id)
-  VALUES ('Frederic', 'frederic@example.com','password',3,4);
+INSERT INTO `users` (username, email, password, billing_adress_id, delivery_adress_id,telnummer,birthdate,`name`,`lastname`)
+  VALUES ('Fred Eric', 'fred.eric@example.com','password',1,2,0358181847,'11 octobre 2018','Fred', 'Eric');
+INSERT INTO `users` (username, email, password, billing_adress_id, delivery_adress_id,telnummer,birthdate,`name`,`lastname`)
+  VALUES ('Frederic', 'frederic@example.com','password',3,4,0548695874,'10 octobre 2018','Frederic', 'Machin');
 
 INSERT INTO `order_addresses` (`human_name`, `address_one`, `address_two`, `postal_code`, `city`, `country`)
   VALUES ('Fred Eric', '2 impasse Duvet','3ieme étage', '59000', 'Lille', 'FRANCE');

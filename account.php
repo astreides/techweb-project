@@ -7,7 +7,7 @@
 </head>
 <body>
 <form method="post" ></br>
-
+<a href='Accueil.php'><input type = "button" value=" Back to Menu"></a></br>
 	mot de passe : <input type="password" name="nepassword" /></br>
 	confirmation : <input type="password" name="validation" /></br>
  <input type="submit" value="OK" ></br>

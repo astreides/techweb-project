@@ -1,5 +1,15 @@
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 
+<?php 
+try{
+$bdd = new PDO('mysql:host=localhost;dbname=dump;charset=utf8','root','');
+}
+catch(Exception $e)
+{
+		die('Erreur: ' . $e-getMessage());
+}
+?>
+
 <log style="text-align:right">
     <form name="affiche" method="post" action="https://www.techno-web.fr/index.php">
         login : <input type="text" name="login" />

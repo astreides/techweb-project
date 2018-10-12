@@ -18,7 +18,8 @@
 	}
 	?>
 <form method="post" action="Cart.php">
-<input type="submit" name="commande" value="ouiii">
+quantiter voulue <input type="text" name="quantity" value="1" /></br>
+<input type="submit" name="commande" value="click me">
 </form>
 </body>
 </html>

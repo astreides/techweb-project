@@ -1,8 +1,9 @@
 <!DOCTYPE>
+<?php //view ?>
 <html>
 <head>
     <meta charset="iso-8859-1" />
-    <title>Cart</title>
+    <title><h1>Cart</h1></title>
 </head>
 <body>
 	<p1> Cart </p1>

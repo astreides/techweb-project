@@ -1,4 +1,5 @@
 	<?php 
+	//action
 	$reponse=$bdd->query('SELECT * FROM products WHERE name=\''.$_POST["product"].'\'');
 
 	$donnees=$reponse->fetch();

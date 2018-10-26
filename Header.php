@@ -9,26 +9,30 @@
 </log>
 <header>
 	<center>FurCuddle.com</center>
-
-<form method="get" action="" >
+	<table>
+<thead>
+   
+<form method="get">
 	<input type="hidden" name="page" value="Accueil" >	
 	<input type="submit" value="Menu">
 </form>
 
-<form method="get" action="." >
+<form method="get">
 	<input type="hidden" name="page" value="Cart" >	
 	<input type="submit" value="Cart">
 </form>
 
-<form method="get" action="" >
+<form method="get">
 	<input type="hidden" name="page" value="account" >	
 	<input type="submit" value="Nouveau compte">
 </form>
 
-<form method="get" action="" >
+<form method="get">
 	<input type="hidden" name="page" value="listproducts" >	
 	<input type="submit" value="Produits">
 </form>
+</thead> 
+	</table>
 
 	<lien style="text-align:right">
 	</lien>

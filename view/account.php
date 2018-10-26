@@ -40,7 +40,7 @@ function maFonction(){
     <th>nom : <input type="text" name="tnom" /></br></th><tr>
     <th>prénom : <input type="text" name="tprenom" /></br></th><tr>
     <th>adresse : <input type="text" name="tadresse" /></br></th><tr>
-    <th>numéro de péléphone : <input type="text" name="ttel" /></br></th><tr>
+    <th>numéro de téléphone : <input type="text" name="ttel" /></br></th><tr>
     <th>date de naissance : <input type="text" name="tage" /></br></th><tr>
     <th><input type="submit" value="Overifier"></form><form method="get" action="" >
 	<input type="hidden" name="page" value="Accueil" >	

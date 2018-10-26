@@ -17,10 +17,13 @@
 			));
 
 	} ?>
+
 <body>
     </br>
 	<?php
-	$reponse=$bdd->query('SELECT * FROM products WHERE name=\''.$_POST["produits"].'\'');
+	
+	$reponse=$bdd->query('SELECT * FROM products WHERE name=\''.$_POST["product"].'\''))
+
 	while ($donnees=$reponse->fetch()){
 		?>
 		<image src=<?php echo $donnees['lien_image'] ?> width="600px"></br>

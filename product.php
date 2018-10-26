@@ -7,16 +7,7 @@
 <?php include("Header.php") ?>
 	<?php
 	function add_to_cart($id_cart, $id_item, $quantity, $price)
-	{
-		try{
-			$bdd = new PDO('mysql:host=localhost;dbname=dump;charset=utf8','root','');
-		}
-		catch(Exception $e)
-		{
-		die('Erreur: ' . $e-getMessage());
-		}
-
-		
+	{	
 		$req = $bdd->prepare('INSERT INTO `order_products` (order_id, product_id, quantity, unit_price) VALUES (:id_cart,:item,:quantity,:price)');
 		$req->execute(array(
 			'id_cart' => $id_cart,
@@ -40,9 +31,9 @@
 
 	?>
 
-<form method="post" action=<?php add_to_cart(4, $donnees['id'] , 4, $donnees['unit_price'] ) ?> >
+<form>
 quantity voulue <input type="text" name="quantity" value="1" /></br>
-<input type="submit" name="commande" value="click me">
+<input type="submit" name="commande" value="click me" onclick="add_to_cart(4, $donnees['id'] , quantity, $donnees['unit_price'] )">
 </form>
 </body>
 </html>

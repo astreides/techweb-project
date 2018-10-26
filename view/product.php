@@ -22,7 +22,7 @@
     </br>
 	<?php
 	
-	$reponse=$bdd->query('SELECT * FROM products WHERE name=\''.$_POST["product"].'\''))
+	$reponse=$bdd->query('SELECT * FROM products WHERE name=\''.$_POST["product"].'\'');
 
 	while ($donnees=$reponse->fetch()){
 		?>

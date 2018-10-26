@@ -15,11 +15,16 @@
 		{
 		die('Erreur: ' . $e-getMessage());
 		}
-		echo $id_cart;
-		echo $id_item;
-		echo $quantity;
-		echo $price;
-		$rep=$bdd->query('INSERT INTO `order_products` (order_id, product_id, quantity, unit_price) VALUES (4,4,4,4)') or die(print_r($bdd->errorInfo()));
+
+		
+		$req = $bdd->prepare('INSERT INTO `order_products` (order_id, product_id, quantity, unit_price) VALUES (:id_cart,:item,:quantity,:price)');
+		$req->execute(array(
+			'id_cart' => $id_cart,
+			'item' => $id_item,
+			'quantity' => $quantity,
+			'price' => $price,
+			));
+
 	} ?>
 <body>
     </br>

@@ -1,7 +1,9 @@
 	<?php 
 	//action
-	$reponse=$bdd->query('SELECT * FROM products WHERE name=\''.$_POST["product"].'\'');
-
+	$reponse = $bdd->prepare('SELECT * FROM products WHERE name=:nom');
+		$req->execute(array(
+			'nom' => $_POST["product"],
+			));
 	$donnees=$reponse->fetch();
 	if( isset($_POST["quantity"]) ){
 		

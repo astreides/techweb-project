@@ -4,7 +4,7 @@
     <meta charset="iso-8859-1" />
     <title>Cart</title>
 </head>
-<?php include("Header.php") ?>
+
 	<?php
 	function add_to_cart($id_cart, $id_item, $quantity, $price)
 	{	

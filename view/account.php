@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE>
-<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
 <html>
 <head>
     <meta charset="iso-8859-1" />
@@ -12,7 +12,7 @@ function maFonction(){
     }
    if(strcmp($_POST["nepassword"],$_POST["validation"]) == 0){
 	?><html>
-	<form method="post" action="action.php">
+	<form method="post" action="?page=action">
 	<input type="hidden" name="nlogin" value=<?php echo $_POST["tnlogin"] ?> >
 	<input type="hidden" name="npassword" value=<?php echo $_POST["nepassword"] ?> >
 	<input type="hidden" name="nom" value=<?php echo $_POST["tnom"] ?> >
@@ -20,7 +20,7 @@ function maFonction(){
 	<input type="hidden" name="adresse" value=<?php echo $_POST["tadresse"] ?> >
 	<input type="hidden" name="tel" value=<?php echo $_POST["ttel"] ?> >
 	<input type="hidden" name="age" value=<?php echo $_POST["tage"] ?> >
-	<input type="submit" value="OK">
+	<input type="submit" value="creer compte" >
 	</form>
 	</html>
 	<?php	
@@ -42,10 +42,13 @@ function maFonction(){
     <th>adresse : <input type="text" name="tadresse" /></br></th><tr>
     <th>numéro de péléphone : <input type="text" name="ttel" /></br></th><tr>
     <th>date de naissance : <input type="text" name="tage" /></br></th><tr>
-    <th><input type="submit" value="OK"><a href='Accueil.php'><input type = "button" value=" Back to Menu"></a></br></br></th><tr>
+    <th><input type="submit" value="Overifier"></form><form method="get" action="" >
+	<input type="hidden" name="page" value="Accueil" >	
+	<input type="submit" value="Menu">
+</form></br></br></th><tr>
 </table>
 
-</form>
+
 <?php
 try{
     maFonction();

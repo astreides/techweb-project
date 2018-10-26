@@ -6,10 +6,10 @@
 </head>
 <body>
     <?php
-    include("Header.php");
+    
     $reponse=$bdd->query('SELECT * FROM products');
     ?>
-<form method="post" action="product.php">
+<form method="post" action="">
 	    <table border=6 cellspacing=12 cellpadding=20>
         <thead><tr>
             <th>Categorie</th>

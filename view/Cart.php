@@ -6,7 +6,7 @@
 </head>
 <body>
 	<p1> Cart </p1>
-    <?php include("Header.php") ?></br>
+    </br>
 	<?php
 
 	$reponse=$bdd->query('select p.* from products p

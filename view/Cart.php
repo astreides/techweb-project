@@ -2,11 +2,11 @@
 <?php //view ?>
 <html>
 <head>
-    <meta charset="iso-8859-1" />
-    <title><h1>Cart</h1></title>
+<title>Panier</title>
 </head>
 <body>
-	<p1> Cart </p1>
+	
+    <h1>Panier</h1>
     </br>
 	<?php
 

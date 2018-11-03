@@ -18,6 +18,6 @@
 
     </body>
     <footer>
-        <center>vente.com</center>
+        <center>FurCuddle.com</center>
     </footer>
 </html>

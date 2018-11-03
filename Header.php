@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-
+<meta charset="utf-8" />
 <log style="text-align:right">
     <form name="affiche" method="post" action="https://www.techno-web.fr/index.php">
         login : <input type="text" name="login" />
@@ -19,7 +19,7 @@
 
 <form method="get">
 	<input type="hidden" name="page" value="Cart" >	
-	<input type="submit" value="Cart">
+	<input type="submit" value="Panier">
 </form>
 
 <form method="get">

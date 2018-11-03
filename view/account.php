@@ -2,8 +2,7 @@
 
 <html>
 <head>
-    <meta charset="iso-8859-1" />
-    <title>create account page</title>
+    <title>Create account page</title>
 </head>
 <?php
 function maFonction(){
@@ -16,11 +15,11 @@ function maFonction(){
 	<input type="hidden" name="nlogin" value=<?php echo $_POST["tnlogin"] ?> >
 	<input type="hidden" name="npassword" value=<?php echo $_POST["nepassword"] ?> >
 	<input type="hidden" name="nom" value=<?php echo $_POST["tnom"] ?> >
-	<input type="hidden" name="prenom" value=<?php echo $_POST["tprenom"] ?> >
+	<input type="hidden" name="prénom" value=<?php echo $_POST["tprenom"] ?> >
 	<input type="hidden" name="adresse" value=<?php echo $_POST["tadresse"] ?> >
 	<input type="hidden" name="tel" value=<?php echo $_POST["ttel"] ?> >
 	<input type="hidden" name="age" value=<?php echo $_POST["tage"] ?> >
-	<input type="submit" value="creer compte" >
+	<input type="submit" value="créer compte" >
 	</form>
 	</html>
 	<?php	
@@ -42,7 +41,7 @@ function maFonction(){
     <th>adresse : <input type="text" name="tadresse" /></br></th><tr>
     <th>numéro de téléphone : <input type="text" name="ttel" /></br></th><tr>
     <th>date de naissance : <input type="text" name="tage" /></br></th><tr>
-    <th><input type="submit" value="Overifier"></form><form method="get" action="" >
+    <th><input type="submit" value="Vérifier"></form><form method="get" action="" >
 	<input type="hidden" name="page" value="Accueil" >	
 	<input type="submit" value="Menu">
 </form></br></br></th><tr>

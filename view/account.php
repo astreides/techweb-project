@@ -12,8 +12,8 @@ function maFonction($bdd){
 	$reponse=$bdd->query('SELECT * FROM users');
 	$existant=0;
 	while($donnees=$reponse->fetch()){
-		if($_POST["tnlogin"]==$donnees["username"]){echo "login déjà utilisé  "; $existant=1;}
-		if($_POST["tmail"]==$donnees["email"]){echo "email déjà attribuée  "; $existant=1;}
+		if($_POST["tnlogin"]==$donnees["username"]){echo "login déjà utilisé.  "; $existant=1;}
+		if($_POST["tmail"]==$donnees["email"]){echo "email déjà attribué.  "; $existant=1;}
 	}
 	if((strcmp($_POST["nepassword"],$_POST["validation"]) == 0)&&($existant==0)){
 	   if($_POST["nepassword"] != NULL){

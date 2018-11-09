@@ -6,7 +6,7 @@
 </head>
 <body>
 	
-    <h1>Panier</h1>
+    <h1><center>Panier<center></h1>
     </br>
 	<?php
 

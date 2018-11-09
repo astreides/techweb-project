@@ -12,7 +12,7 @@
 
 	$reponse=$bdd->query('select * from products p
 INNER JOIN order_products op ON p.id = op.product_id
-WHERE op.order_id = 4');
+WHERE op.order_id = \''.$_SESSION["id"].'\'');
 
 $somme = 0;
 $prix = 0;

@@ -1,7 +1,7 @@
 <?php 
 
 if( isset($_POST["delete"]) ){
-        $req = $bdd->query('DELETE FROM `order_products` WHERE order_id=4 AND product_id=\''.$_POST["delete"].'\' ');
+        $req = $bdd->query('DELETE FROM `order_products` WHERE order_id=\''.$_SESSION["id"].'\' AND product_id=\''.$_POST["delete"].'\' ');
 
 		
     }

@@ -65,7 +65,7 @@ CREATE TABLE `users` (
   `telnummer` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `birthdate` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `billing_adress_id`  int(10) unsigned DEFAULT NULL,
-  `delivery_adress_id` int(10) unsigned DEFAULT NULL,
+  `delivery_adress_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),

@@ -14,6 +14,8 @@
 INNER JOIN order_products op ON p.id = op.product_id
 WHERE op.order_id = 4');
 
+$somme = 0;
+$prix = 0;
 	?>
 	<table  border=6 cellspacing=12 cellpadding=20>
 	<thead><tr>
@@ -21,10 +23,12 @@ WHERE op.order_id = 4');
         <th>Picture</th>
         <th>Cuteness</th>
 		<th>quantité</th>
+		<th>prix unitaire </th>
 		<th>prix total</th>
 		<th>Remove from Cart</th>
         </tr></thead>
 	<tbody>
+	
 		<?php while($donnees=$reponse->fetch()){
 			?>
 			<tr>
@@ -32,14 +36,28 @@ WHERE op.order_id = 4');
             <td><image src=<?php echo $donnees['lien_image'] ?> width="200px"></td>
             <td><?php echo $donnees['cutiness'] ?></td>
 			<td><?php echo $donnees['quantity'] ?></td>
+			<td><?php echo $donnees['unit_price']?></td>
 			<td><?php echo( $donnees['quantity']* $donnees['unit_price']) ?></td>
             <td><form method="post">
 			<input type="hidden" name="delete" value=<?php echo $donnees["product_id"] ?> >
 			<input type="submit" value="delete" >
 			</form> </td> 
             </tr>
+
 			<?php
+			$somme+=$donnees['quantity'];
+			$prix+=$donnees['quantity']*$donnees['unit_price'];
 		}?>
+		<td> total</td>
+		<td></td>
+		<td>nombre d'article</td>
+		<td><?php echo $somme?></td>
+		<td> prix total du panier</td>
+		<td><?php echo $prix?></td>
+		<td><form method="post">
+			<input type="hidden" name="delete_all" value=<?php echo $donnees["order_id"] ?> >
+			<input type="submit" value="vider le panier" >
+			</form></td>
 	</tbody>
 	</table>
 </body>

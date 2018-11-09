@@ -12,7 +12,7 @@
     <body>
 
 <section>
-    <center><img src='images/bbtgr.PNG'alt='Logo' width="300px"/></center>
+    <center><img src='images/bbtgr.PNG'alt='Logo' width="400px"/></center>
 </section>
 
 

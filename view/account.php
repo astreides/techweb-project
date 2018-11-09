@@ -5,11 +5,17 @@
     <title>Create account page</title>
 </head>
 <?php
-function maFonction(){
+function maFonction($bdd){
     if( !isset($_POST["nepassword"]) ){
         throw new Exception("param est vide");
     }
-   if(strcmp($_POST["nepassword"],$_POST["validation"]) == 0){
+	$reponse=$bdd->query('SELECT * FROM users');
+	$existant=0;
+	while($donnees=$reponse->fetch()){
+		if($_POST["tnlogin"]==$donnees["username"]){echo "login déjà utilisé.  "; $existant=1;}
+		if($_POST["tmail"]==$donnees["email"]){echo "email déjà attribué.  "; $existant=1;}
+	}
+	if((strcmp($_POST["nepassword"],$_POST["validation"]) == 0)&&($existant==0)){
 	   if($_POST["nepassword"] != NULL){
 		?><html>
 		<form method="post" action="?page=action">
@@ -53,7 +59,7 @@ function maFonction(){
 
 <?php
 try{
-    maFonction();
+    maFonction($bdd);
 } catch(Exception $e){
 
 }	

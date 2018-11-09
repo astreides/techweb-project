@@ -22,7 +22,7 @@
 <form method="post">
 quantité voulue <input type="text" name="quantity"  /></br>
 <input type="hidden" name="product" value=<?php echo $_POST["product"] ?> >
-<input type="hidden" name="num_cart" value=4  >
+<input type="hidden" name="num_cart" value=<?php echo $_SESSION["id"] ?>  >
 <input type="submit" name="commande" >
 </form>
 </body>

@@ -33,7 +33,9 @@ WHERE op.order_id = 4');
             <td><?php echo $donnees['cutiness'] ?></td>
 			<td><?php echo $donnees['quantity'] ?></td>
 			<td><?php echo( $donnees['quantity']* $donnees['unit_price']) ?></td>
-            <td><form method="post"><input type="submit" name="delete" value=<?php echo $donnees["id"] ?> >
+            <td><form method="post">
+			<input type="hidden" name="delete" value=<?php echo $donnees["product_id"] ?> >
+			<input type="submit" value="delete" >
 			</form> </td> 
             </tr>
 			<?php

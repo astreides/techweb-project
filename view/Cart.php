@@ -15,12 +15,14 @@ INNER JOIN order_products op ON p.id = op.product_id
 WHERE op.order_id = 4');
 
 	?>
-	<table>
+	<table  border=6 cellspacing=12 cellpadding=20>
 	<thead><tr>
 		<th>Categorie</th>
         <th>Picture</th>
         <th>Cuteness</th>
-        <th>Remove from Cart</th>
+		<th>quantité</th>
+		<th>prix total</th>
+		<th>Remove from Cart</th>
         </tr></thead>
 	<tbody>
 		<?php while($donnees=$reponse->fetch()){
@@ -29,6 +31,8 @@ WHERE op.order_id = 4');
             <td> <?php echo $donnees['name'] ?></td>
             <td><image src=<?php echo $donnees['lien_image'] ?> width="200px"></td>
             <td><?php echo $donnees['cutiness'] ?></td>
+			<td></td>
+			<td></td>
             <td><input type="submit" name="produits" value="delete"></td>
             </tr>
 			<?php

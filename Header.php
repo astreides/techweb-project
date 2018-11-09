@@ -1,11 +1,36 @@
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 <meta charset="utf-8" />
 <log style="text-align:right">
-    <form name="affiche" method="post" action="https://www.techno-web.fr/index.php">
+<?php
+function maFonctionlog(){
+    if(isset($_SESSION["id"]) != NULL ){
+		?><html>
+	<form method="post">
+	<input type="hidden" name="page" value="deco" >	
+	<input type="submit" value="Deconnexion">
+	</form></html>
+	<?php }
+    if(!isset($_SESSION["id"]) != NULL ){
+    ?>
+	<html>
+	 <form name="affiche" method="post">
         login : <input type="text" name="login" />
-        password : <input type="text" name="password" />
+        password : <input type="password" name="password" />
+		<input type="hidden" name="page" value="co" >	
         <input type="submit" value="OK">
     </form>
+	</html>
+	   
+	<?php 	}
+		
+	}
+try{
+    maFonctionlog();
+} catch(Exception $e){
+
+}  
+?>
+
 </log>
 <header>
 	<center>FurCuddle.com</center>

@@ -1,5 +1,6 @@
 <?php
 //TODO start session
+session_start();
 
 //DONE include database.php file 
 
@@ -19,11 +20,13 @@
 	//TODO (in the next step) control user access
 
 //DONE(in part) get page parameter ($_GET['page'] or $_POST['page']) and assign it into $page variable
-	if( isset($_GET["page"])):
-		 $page=($_GET["page"]); 
-		 else:
+	if( isset($_GET["page"]) ){
+	$page=($_GET["page"]);}
+	if(isset($_POST["page"])){
+	$page=($_POST["page"]);}
+	if(!isset($page)){
 		$page="test1";
-		endif;
+	}
 //if 'action/'.$page'.php' exists then include it (use file_exists($filename) function)
 
 	 if(file_exists("action/".$page.".php"))

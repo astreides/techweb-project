@@ -10,7 +10,7 @@
     </br>
 	<?php
 
-	$reponse=$bdd->query('select p.* from products p
+	$reponse=$bdd->query('select * from products p
 INNER JOIN order_products op ON p.id = op.product_id
 WHERE op.order_id = 4');
 
@@ -31,9 +31,10 @@ WHERE op.order_id = 4');
             <td> <?php echo $donnees['name'] ?></td>
             <td><image src=<?php echo $donnees['lien_image'] ?> width="200px"></td>
             <td><?php echo $donnees['cutiness'] ?></td>
-			<td></td>
-			<td></td>
-            <td><form method="post"> <input type="submit"  name="delete" value=<?php echo $donnees["id"] ?>  ></form> </td> 
+			<td><?php echo $donnees['quantity'] ?></td>
+			<td><?php echo( $donnees['quantity']* $donnees['unit_price']) ?></td>
+            <td><form method="post"><input type="submit" name="delete" value=<?php echo $donnees["id"] ?> >
+			</form> </td> 
             </tr>
 			<?php
 		}?>

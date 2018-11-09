@@ -33,7 +33,7 @@ WHERE op.order_id = 4');
             <td><?php echo $donnees['cutiness'] ?></td>
 			<td></td>
 			<td></td>
-            <td><input type="submit" name="produits" value="delete"></td>
+            <td><form method="post"> <input type="submit"  name="delete" value=<?php echo $donnees["id"] ?>  ></form> </td> 
             </tr>
 			<?php
 		}?>

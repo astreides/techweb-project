@@ -52,7 +52,12 @@ $prix = 0;
 			}
 		}?>
 		<td> total</td>
-		<td></td>
+		<td><form method="post">
+		<?php if(isset($_SESSION["id"])){ ?>
+			<input type="hidden" name="validate_order" value=<?php echo $donnees["order_id"] ?> >
+			<?php } ?>
+			<input type="submit" value="valider le panier" >
+			</form></td>
 		<td>nombre d'article</td>
 		<td><?php echo $somme?></td>
 		<td> prix total du panier</td>

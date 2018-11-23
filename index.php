@@ -9,7 +9,7 @@ session_start();
 	include("datab.php");
 
 //TODO include checkUser.php file
-
+	include("checkUser.php");	
 
 	//TODO (in the next step) control user access
 

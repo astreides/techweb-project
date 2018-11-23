@@ -14,7 +14,7 @@
 <section>
     <center>
 	<img src='images/bbtgr.PNG'alt='Logo' width="400px"/><br/>
-	<h1> bienvenue <?php echo $_COOKIE['pseudo']; ?><h1/>
+	<h1> bienvenue <?php echo $_COOKIE['id']; ?><h1/>
 	</center>
 </section>
 

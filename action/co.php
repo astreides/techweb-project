@@ -15,9 +15,19 @@ while($donnees=$req->fetch()){
 }
 if(($_POST["login"] != NULL) && ($_POST["password"] != NULL) && ($user!=0)){
 
-$_SESSION["id"]= $user;
-$_SESSION["login"]=$_POST["login"] ;
-$_SESSION["password"]=$_POST["password"] ;
+	$_SESSION["id"]= $user;
+	$_SESSION["login"]=$_POST["login"] ;
+	$_SESSION["password"]=$_POST["password"] ;
+
+	$blub= $bdd->query('SELECT * FROM orders WHERE user_id=\''.$_SESSION["id"].'\' AND type ="CART"');
+	$i=0;
+	while($blob=$blub->fetch()){
+		$i=1;
+	}
+	if($i==0){
+		$lol = $bdd->query('INSERT INTO orders (user_id,type,status,amount) VALUES (\''.$_SESSION["id"].'\',"CART","CART","0")');
+	}
+
 }
 }
 ?>

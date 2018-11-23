@@ -6,6 +6,7 @@
     <title>result</title>
 </head>
 <body>
+	
 	login: <?php echo htmlspecialchars($_POST["nlogin"]); ?></br>
 	password: <?php echo htmlspecialchars($_POST["npassword"]); ?></br>
 	nom: <?php echo htmlspecialchars($_POST["nom"]); ?></br>

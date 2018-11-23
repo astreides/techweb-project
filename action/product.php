@@ -13,7 +13,9 @@
 				$i=1;
 			}
 			if($i==0){
-				if($req = $bdd->query('INSERT INTO `order_products` (order_id, product_id, quantity, unit_price) VALUES (\''.$_POST["num_cart"].'\',\''.$donnees['id'].'\',\''.$_POST["quantity"].'\',\''.$donnees['unit_price'].'\')')){print "HAAAAAPPPPPPPPPYYYYYYYYYYYY"; }
+				$req = $bdd->query('SELECT id from orders WHERE user_id =\''.$_SESSION["id"].'\' AND type="CART"');
+				$truc = $req->fetch();
+				if($req = $bdd->query('INSERT INTO `order_products` (order_id, product_id, quantity, unit_price) VALUES (\''.$truc["id"].'\',\''.$donnees['id'].'\',\''.$_POST["quantity"].'\',\''.$donnees['unit_price'].'\')')){print "HAAAAAPPPPPPPPPYYYYYYYYYYYY"; }
 			}   
 		}
 	}

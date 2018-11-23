@@ -56,10 +56,19 @@ try{
 	<input type="hidden" name="page" value="listproducts" >	
 	<input type="submit" value="Produits">
 </form>
+<?php
+    if(isset($_SESSION["id"]) != NULL ){
+		$currentUser=$bdd->query('select * from users WHERE users.id = \''.$_SESSION["id"].'\'');
+		$user=$currentUser->fetch();
+		if($user['isAdmin']==1){
+	?>
 <form method="get">
 	<input type="hidden" name="page" value="admin" >	
 	<input type="submit" value="Page Admin">
 </form>
+<?php
+}}
+?>
 </thead> 
 	</table>
 

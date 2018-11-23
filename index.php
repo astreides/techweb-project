@@ -9,7 +9,7 @@ session_start();
 	include("datab.php");
 
 //TODO include checkUser.php file
-	#include("checkUser.php");	
+	include("checkUser.php");	
 
 	//TODO (in the next step) control user access
 
@@ -50,7 +50,7 @@ session_start();
 	if(file_exists('view/'.$page.'.php')){
 		include('view/'.$page.'.php');}
 	else{
-			include('view/main.php');}
+			include('view/Accueil.php');}
 	
 			
 

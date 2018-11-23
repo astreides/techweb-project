@@ -5,7 +5,7 @@
         <title>FurCuddle.com</title>
 
         <style>
-        
+
         </style>
     </head>
 
@@ -13,7 +13,6 @@
 <section>
     <center>
 	<img src='images/bbtgr.PNG'alt='Logo' width="300px"/>
-	<h1> bienvenue <?php #echo $_COOKIE['pseudo']; ?><h1/>
 	</center>
 </section>
 

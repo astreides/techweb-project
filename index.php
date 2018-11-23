@@ -23,9 +23,9 @@ session_start();
 	}
 //if 'action/'.$page'.php' exists then include it (use file_exists($filename) function)
 
-	 if(file_exists("action/".$page.".php"))
-		include("action/".$page.".php")
-
+	 if(file_exists("action/".$page.".php")){
+		include("action/".$page.".php");
+	 }
 
 	//create one php file for each action to manage on the website
 
@@ -47,12 +47,12 @@ session_start();
 
 //DONE if 'view/'.$page'.php' exists then include it (use file_exists($filename) function)
 //           else include 'view/main.php' (it has to exist)
-	 if(file_exists('view/'.$page.'.php')):
-	 include('view/'.$page.'.php');
-		else:
-	 include('view/main.php');
-	 endif;
-		
+	if(file_exists('view/'.$page.'.php')){
+		include('view/'.$page.'.php');}
+	else{
+			include('view/main.php');}
+	
+			
 
 	//create one php file for each view to manage on the website (don't forget to create on main.php view)
 

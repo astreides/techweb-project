@@ -10,9 +10,8 @@
     </br>
 	<?php
 if(isset($_SESSION["id"])){
-	$reponse=$bdd->query('select * from products p
-INNER JOIN order_products op ON p.id = op.product_id
-WHERE op.order_id = \''.$_SESSION["id"].'\'');
+	$reponse=$bdd->query('SELECT * FROM products p INNER JOIN order_products op ON p.id=op.product_id INNER JOIN orders o ON op.order_id=o.id
+	WHERE o.user_id = \''.$_SESSION["id"].'\' AND o.type="CART"');
 }
 $somme = 0;
 $prix = 0;

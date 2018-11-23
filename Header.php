@@ -16,7 +16,9 @@ function maFonctionlog(){
 	 <form name="affiche" method="post">
         login : <input type="text" name="login" value=<?php echo $_SESSION["login"]?> />
         password : <input type="password" name="password" value=<?php echo $_SESSION["password"]?> />
-		<input type="hidden" name="page" value="co" >	
+		<input type="hidden" name="page" value="co" >
+		<input type="checkbox" name="remember_me" value="ok" checked>
+		<label for="scales">remember_me</label>
         <input type="submit" value="OK">
     </form>
 	</html>

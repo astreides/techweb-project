@@ -8,12 +8,5 @@ while($donnees=$req->fetch()){
 			$_SESSION["password"]=$donnees["password"] ;
 		}
 	}
-	else{
-		if(isset($_SESSION["id"]) == NULL ){
-			setcookie('id',$donnees["id"], time() + 120, null, null, false, true); 
-			setcookie('user',$donnees["username"], time() + 120, null, null, false, true); 
-			setcookie('password',$donnees["password"], time() + 120, null, null, false, true); 
-		}
-	}
 }
 ?>

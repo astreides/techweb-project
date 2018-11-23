@@ -6,13 +6,7 @@ session_start();
 
 	//DONE assign database connexion into $database variable
 
-		try{
-		$bdd = new PDO('mysql:host=localhost;dbname=dump;charset=utf8','root','');
-		}
-		catch(Exception $e)
-		{
-				die('Erreur: ' . $e->getMessage());
-		}
+	include("datab.php");
 
 //TODO include checkUser.php file
 

@@ -10,12 +10,12 @@ function maFonctionlog(){
 	<input type="submit" value="Deconnexion">
 	</form></html>
 	<?php }
-    if(!isset($_SESSION["id"]) != NULL ){
+    if(isset($_SESSION["id"]) == NULL ){
     ?>
 	<html>
 	 <form name="affiche" method="post">
-        login : <input type="text" name="login" />
-        password : <input type="password" name="password" />
+        login : <input type="text" name="login" value=<?php echo $_SESSION["login"]?> />
+        password : <input type="password" name="password" value=<?php echo $_SESSION["password"]?> />
 		<input type="hidden" name="page" value="co" >	
         <input type="submit" value="OK">
     </form>

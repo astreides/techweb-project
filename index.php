@@ -50,7 +50,7 @@ session_start();
 	if(file_exists('view/'.$page.'.php')){
 		include('view/'.$page.'.php');}
 	else{
-			include('view/main.php');}
+			include('view/Accueil.php');}
 	
 			
 

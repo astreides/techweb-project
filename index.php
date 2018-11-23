@@ -19,7 +19,7 @@ session_start();
 	if(isset($_POST["page"])){
 	$page=($_POST["page"]);}
 	if(!isset($page)){
-		$page="test1";
+		$page="Accueil";
 	}
 //if 'action/'.$page'.php' exists then include it (use file_exists($filename) function)
 

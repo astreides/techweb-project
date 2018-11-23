@@ -57,6 +57,7 @@ CREATE TABLE `order_addresses` (
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `isAdmin` tinyint(1) NOT NULL DEFAULT 1,
   `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -125,6 +126,7 @@ INSERT INTO `users` (username, email, password, billing_adress_id, delivery_adre
   VALUES ('Fred Eric', 'fred.eric@example.com','password',1,2,0358181847,'11 octobre 2018','Fred', 'Eric');
 INSERT INTO `users` (username, email, password, billing_adress_id, delivery_adress_id,telnummer,birthdate,`name`,`lastname`)
   VALUES ('Frederic', 'frederic@example.com','password',3,4,0548695874,'10 octobre 2018','Frederic', 'Machin');
+INSERT INTO `users` (username, email, password, isAdmin) VALUES ('aze', 'aze', 'aze', 1);
 
 INSERT INTO `order_addresses` (`human_name`, `address_one`, `address_two`, `postal_code`, `city`, `country`)
   VALUES ('Fred Eric', '2 impasse Duvet','3ieme étage', '59000', 'Lille', 'FRANCE');

@@ -56,6 +56,10 @@ try{
 	<input type="hidden" name="page" value="listproducts" >	
 	<input type="submit" value="Produits">
 </form>
+<form method="get">
+	<input type="hidden" name="page" value="admin" >	
+	<input type="submit" value="Page Admin">
+</form>
 </thead> 
 	</table>
 

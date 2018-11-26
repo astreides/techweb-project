@@ -19,4 +19,11 @@
 			}   
 		}
 	}
+	if( isset($_COOKIE[$_POST["product"]])){
+		$temporary=$_COOKIE[$_POST["product"]];
+		setcookie($_POST["product"],$temporary+1, time() + 600, null, null, false, true); 
+	}
+	else{
+		setcookie($_POST["product"],1, time() + 600, null, null, false, true); 
+	}
 	?> 

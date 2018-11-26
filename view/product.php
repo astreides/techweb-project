@@ -16,7 +16,10 @@
 	<?php
 	echo $donnees['description']." ".$donnees['unit_price']." euros";
 		
-
+if( isset($_COOKIE[$_POST["product"]])){
+		echo "\n ce produit a été vu tant de fois:";
+		echo $_COOKIE[$_POST["product"]];
+	}
 
 if(isset($_SESSION["id"]) != NULL ){
 	?>

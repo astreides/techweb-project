@@ -9,8 +9,8 @@ while($donnees=$req->fetch()){
 		}
 	}
 	else{
-		$_SESSION["login"]="login" ;
-		$_SESSION["password"]="password" ;
+		$_SESSION["login"]=NULL ;
+		$_SESSION["password"]=NULL ;
 	}
 }
 ?>

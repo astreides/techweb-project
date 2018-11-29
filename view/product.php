@@ -7,8 +7,9 @@
 
     </br>
 	<?php
-	
-	$reponse=$bdd->query('SELECT * FROM products WHERE name=\''.$_POST["product"].'\'');
+	$reponse=$bdd->prepare('SELECT * FROM products WHERE name= :name');
+	$reponse->execute(array('name'=> $_POST["product"]));
+
 
 	$donnees=$reponse->fetch()
 	?>

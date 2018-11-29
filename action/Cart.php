@@ -1,5 +1,5 @@
 <?php 
-
+#sessions id a verifier
 $raq=$bdd->query('SELECT * FROM orders WHERE user_id=\''.$_SESSION["id"].'\' AND type = "CART"');
 $riq=$raq->fetch();
 if( isset($_POST["delete"]) ){

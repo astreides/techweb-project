@@ -1,7 +1,9 @@
 <?php 
 #sessions id a verifier
-$raq=$bdd->query('SELECT * FROM orders WHERE user_id=\''.$_SESSION["id"].'\' AND type = "CART"');
-$riq=$raq->fetch();
+if(isset($_SESSION["id"])){
+    $raq=$bdd->query('SELECT * FROM orders WHERE user_id=\''.$_SESSION["id"].'\' AND type = "CART"');
+    $riq=$raq->fetch();
+}
 if( isset($_POST["delete"]) ){
         $req = $bdd->query('DELETE FROM `order_products` WHERE order_id=\''.$riq["id"].'\' AND product_id=\''.$_POST["delete"].'\' ');
 
